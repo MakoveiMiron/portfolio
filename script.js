@@ -1,13 +1,10 @@
 // Smooth scroll for internal links
 
 window.onload = function () {
-    // Disable automatic scroll restoration after reload
-    if ('scrollRestoration' in window.history) {
-        window.history.scrollRestoration = 'manual';  // Prevents browser from restoring scroll position
+    // Clear the hash in the URL, which will reset the scroll position
+    if (window.location.hash) {
+        window.location.hash = '';
     }
-
-    // Scroll to the top after the page reloads
-    window.scrollTo(0, 0);
 };
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
