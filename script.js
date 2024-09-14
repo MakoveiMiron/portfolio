@@ -1,6 +1,6 @@
 // Smooth scroll for internal links
 
-window.onbeforeunload = function () {
+window.onload = function () {
     window.scrollTo(0, 0);
 };
 
