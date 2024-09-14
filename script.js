@@ -1,10 +1,7 @@
 // Smooth scroll for internal links
 
-window.onload = function () {
-    // Clear the hash in the URL, which will reset the scroll position
-    if (window.location.hash) {
-        window.location.hash = '';
-    }
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
 };
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
