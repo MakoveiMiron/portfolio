@@ -33,3 +33,20 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             alert('Failed to send message. Please try again later.');
         });
 });
+
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const navItems = document.querySelectorAll('.nav-links li a');
+
+// Toggle menu when hamburger icon is clicked
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Close the menu when a nav item is clicked
+navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+    });
+});
+
