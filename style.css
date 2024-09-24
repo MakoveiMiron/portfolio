@@ -311,7 +311,7 @@ header .btn:hover {
     align-items: center;
 }
 
-.button-to-demo a button {
+#button {
     padding: 15px;
     background-color: #e08e45;
     color: white;
@@ -322,7 +322,7 @@ header .btn:hover {
     transition: background-color 0.3s ease;
 }
 
-.button-to-demo button:hover {
+#button:hover {
     background-color: #cf7740;
 }
 

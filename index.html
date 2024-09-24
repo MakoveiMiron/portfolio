@@ -12,11 +12,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/src/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-    <script>
-       $(document).ready(function(){
-            $(window).scrollTop(0);
-        });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -183,9 +179,7 @@
                                 <p>API calls</p>
                         </div>
                         <div class="button-to-demo">
-                            <a href="https://makoveimiron.github.io/weather-app/" target="_blank">
-                                <button>Live demo</button>
-                            </a>
+                                <button id="button">Live demo</button>
                         </div>
                 </div>
             </div>
@@ -211,5 +205,18 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+      history.scrollRestoration = "manual";
+
+        $(window).on('beforeunload', function(){
+            $(window).scrollTop(0);
+        });
+     </script>
+    <script>
+        let button = document.getElementById('button')
+        button.addEventListener('click', function() {
+        window.open('https://makoveimiron.github.io/weather-app/', '_blank');
+    });
+    </script>
 </body>
 </html>
