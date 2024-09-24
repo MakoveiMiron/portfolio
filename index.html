@@ -176,10 +176,28 @@
                                 <p>React.js with Javascript</p>
                                 <p>Vite</p>
                                 <p>CSS (still in progress)</p>
-                                <p>API calls</p>
+                                <p>Weather API usage</p>
                         </div>
                         <div class="button-to-demo">
-                                <button id="button">Live demo</button>
+                                <button class="button" id="weather-app">Let's see!</button>
+                        </div>
+                </div>
+                <div class="project-card">
+                    <div class="h3">
+                        <h3>Random Spotify Track Finder</h3>
+                    </div>
+                    <div class="preview-img">
+                        <img src="/src/trackfinder.png" alt="Weather Webapp">
+                    </div>
+                        <div class="techstack">
+                            <h4>Tech:</h4>
+                                <p>React.js with Javascript</p>
+                                <p>Vite</p>
+                                <p>CSS</p>
+                                <p>Spotify API usage</p>
+                        </div>
+                        <div class="button-to-demo">
+                                <button class="button" id="trackfinder">Let's see!</button>
                         </div>
                 </div>
             </div>
@@ -213,10 +231,13 @@
         });
      </script>
     <script>
-        let button = document.getElementById('button')
-        button.addEventListener('click', function() {
-        window.open('https://makoveimiron.github.io/weather-app/', '_blank');
-    });
+        document.getElementById('weather-app').addEventListener('click', function() {
+            window.open('https://makoveimiron.github.io/weather-app/', '_blank');
+        });
+
+        document.getElementById('trackfinder').addEventListener('click', function() {
+            window.open('https://makoveimiron.github.io/random-spotify-track/', '_blank');
+        });
     </script>
 </body>
 </html>

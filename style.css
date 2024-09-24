@@ -311,7 +311,7 @@ header .btn:hover {
     align-items: center;
 }
 
-#button {
+.button {
     padding: 15px;
     background-color: #e08e45;
     color: white;
