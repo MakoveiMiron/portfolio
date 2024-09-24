@@ -382,13 +382,13 @@ footer {
 
 /* Responsive Styles */
 
-/* General mobile styles */
+/* Responsive Styles for Mobile */
 @media (max-width: 768px) {
     .container {
         padding: 0 1rem;
     }
 
-    /* Navbar adjustments for mobile */
+    /* Navbar */
     .navbar .nav-links {
         flex-direction: column;
         gap: 1rem;
@@ -403,11 +403,19 @@ footer {
         gap: 0.5rem;
     }
 
-    /* Hero section adjustments */
+    /* Header adjustments */
     header {
         height: auto;
         padding: 2rem 1rem;
         text-align: center;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
     }
 
     .hero {
@@ -423,19 +431,11 @@ footer {
         margin-top: 2rem;
     }
 
-    header h1 {
-        font-size: 3rem;
-    }
-
-    header p {
-        font-size: 1.2rem;
-    }
-
     .hero-image img {
         max-width: 70%;
     }
 
-    /* About Me section adjustments */
+    /* About Me section */
     #about-me h2 {
         font-size: 2.5rem;
     }
@@ -445,7 +445,7 @@ footer {
         padding: 0 1rem;
     }
 
-    /* Skills section adjustments */
+    /* Skills section */
     #skills h2 {
         font-size: 2.5rem;
     }
@@ -465,7 +465,20 @@ footer {
         height: 4rem;
     }
 
-    /* Contact form adjustments */
+    /* Project section */
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card img {
+        height: auto;
+    }
+
+    .project-card {
+        text-align: center;
+    }
+
+    /* Contact form */
     form input, form textarea {
         font-size: 1rem;
         padding: 0.8rem;
@@ -480,6 +493,7 @@ footer {
         font-size: 2.5rem;
     }
 }
+
 
 /* Desktop styles */
 @media (min-width: 1025px) {
