@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Source Serif Pro', serif; 
-    background-color: #f4f4f4; 
+    background-color: #f9f9f9; 
     color: #333; 
     line-height: 1.6;
     transition: all 0.3s ease;
@@ -156,7 +156,7 @@ header .btn:hover {
 /* About Me Section */
 #about-me {
     padding: 4rem 0;
-    background: #f9f9f9; 
+    background: #f4f4f4; 
     text-align: center;
 }
 
@@ -248,7 +248,7 @@ header .btn:hover {
 
 /* Projects Section */
 #projects {
-    background: #fff; 
+    background: #f4f4f4;
     padding: 4rem 0;
     text-align: center;
 }
@@ -256,7 +256,7 @@ header .btn:hover {
 #projects h2 {
     font-size: 3rem;
     margin-bottom: 2rem;
-    color: #222; 
+    color: #222;
 }
 
 .project-grid {
@@ -266,11 +266,17 @@ header .btn:hover {
 }
 
 .project-card {
-    background: #f9f9f9; 
+    background: #f9f9f9;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.project-card h3{
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .project-card img {
@@ -282,6 +288,44 @@ header .btn:hover {
 .project-card:hover {
     transform: scale(1.05);
 }
+
+.project-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.techstack {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.techstack h4{
+    margin-bottom: 15px;
+}
+
+.button-to-demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-to-demo button {
+    padding: 15px;
+    background-color: #e08e45;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: larger;
+    transition: background-color 0.3s ease;
+}
+
+.button-to-demo button:hover {
+    background-color: #cf7740;
+}
+
 
 /* Contact Section */
 #contact {
