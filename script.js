@@ -21,7 +21,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
     const form = event.target;
 
-    emailjs.sendForm('service_eevklr2', 'template_xpdcguy', form)
+    emailjs.sendForm('service_eqngrpj', 'template_xpdcguy', form)
         .then(function(response) {
             console.log('Success:', response);
             alert('Message sent successfully!');
