@@ -12,9 +12,6 @@ document.querySelectorAll('.skill-circle').forEach(skill => {
     skill.style.setProperty('--skill-level', skillLevel);
 });
 
-
-//emailjs.init('ZIDCvq_z1aaxYXD13');
-
  //emailjs.init({publicKey: "ZIDCvq_z1aaxYXD13"});
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
