@@ -17,7 +17,7 @@ const translations = {
         step2Title: "Design & Build",
         step2Text: "I make the custom DEMO workflow, tailored to your needs.",
         step3Title: "Testing & Handover",
-        step3Text: "Workflows are tested and delivered with monitoring setup.",
+        step3Text: "Workflows are tested and delivered with monitoring setup.", 
         contactTitle: "Contact Me",
         contactText: "Have a workflow idea? Let's discuss how to save hours of work with custom automation.",
         formName: "Your Name",
