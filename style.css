@@ -43,7 +43,7 @@
     .btn {
       appearance: none; border: 1px solid var(--border); background: var(--card); color: var(--text);
       padding: 10px 14px; border-radius: var(--radius); cursor: pointer; transition: transform .06s ease, border-color .2s ease, background .2s ease;
-      font-weight: 600; letter-spacing: .2px; box-shadow: 0 2px 10px rgba(0,0,0,.2);
+      font-weight: 600; letter-spacing: .2px; box-shadow: 0 2px 10px rgba(0,0,0,.2); text-decoration: none;
     }
     .btn:hover { transform: translateY(-1px); }
     .btn.primary { background: linear-gradient(135deg, #68f4b5, #43c8f0); color: #0b0f1a; border-color: transparent; }
