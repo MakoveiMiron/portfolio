@@ -1,3 +1,16 @@
+const rootStyles = getComputedStyle(document.documentElement);
+const bg = rootStyles.getPropertyValue("--card").trim();
+const text = rootStyles.getPropertyValue("--text").trim();
+const border = rootStyles.getPropertyValue("--border").trim();
+const radius = rootStyles.getPropertyValue("--radius").trim();
+const shadow = rootStyles.getPropertyValue("--shadow").trim();
+function cssVar(name) {
+  return getComputedStyle(document.documentElement)
+    .getPropertyValue(name)
+    .trim();
+}
+
+
 const translations = {
       en: {
         title: "Miron Makovei",
@@ -104,9 +117,17 @@ document.getElementById('form').addEventListener('submit', function(event) {
         Toastify({
             text: "✅ Message sent successfully!",
             duration: 4000,
-            gravity: "top", // top or bottom
-            position: "right", // left, center or right
-            backgroundColor: "#22c55e",
+            gravity: "top", 
+            position: "right",
+            style: {
+                background: "var(--card)",  // match card background
+                color: "var(--text)",
+                border: "1px solid var(--border)",
+                borderRadius: "var(--radius)",
+                boxShadow: "var(--shadow)",
+                padding: "12px 16px",
+                fontWeight: "600",
+            },
             stopOnFocus: true,
         }).showToast();
         form.reset();
@@ -117,10 +138,19 @@ document.getElementById('form').addEventListener('submit', function(event) {
             duration: 4000,
             gravity: "top",
             position: "right",
-            backgroundColor: "#ef4444",
+            style: {
+                background: "var(--card)",
+                color: "var(--text)",
+                border: "1px solid var(--border)",
+                borderRadius: "var(--radius)",
+                boxShadow: "var(--shadow)",
+                padding: "12px 16px",
+                fontWeight: "600",
+            },
             stopOnFocus: true,
         }).showToast();
     });
+
 
 });
 
