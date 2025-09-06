@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miron Makovei</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Serif+Pro:wght@300;400&display=swap" rel="stylesheet">
-    <script type="text/javascript"
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Miron Makovei — Automate Smarter</title>
+  <meta name="description" content="Custom n8n workflow design and implementation. Free consultation. Simple, modern, and reliable automation for your business." />
+  <meta property="og:title" content="Miron Makovei — Automate Smarter" />
+  <meta property="og:description" content="Custom n8n workflow design and implementation. Free consultation. Simple, modern, and reliable automation for your business." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
+<script src="script.js"></script>
 <script type="text/javascript">
    (function(){
       emailjs.init({
@@ -16,181 +23,88 @@
       });
    })();
 </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="/src/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-   <!-- Navbar -->
-<nav class="navbar">
-    <div class="hamburger">
-        <i class="fas fa-bars"></i>
+  <header>
+    <div class="container nav">
+      <a href="#top" class="logo" aria-label="Miron Makovei">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="6" cy="12" r="3"></circle>
+            <circle cx="18" cy="6" r="3"></circle>
+            <circle cx="18" cy="18" r="3"></circle>
+            <path d="M8.5 10.5 15.5 7.5M8.5 13.5 15.5 16.5"/>
+          </svg>
+        </span>
+        <span class="logo-title" id="site-title">Miron Makovei</span>
+      </a>
+      <div class="lang-switch" role="group" aria-label="Language switcher">
+        <button id="lang-en" class="btn ghost" aria-pressed="true">EN</button>
+        <button id="lang-hu" class="btn ghost" aria-pressed="false">HU</button>
+      </div>
     </div>
-    <ul class="nav-links">
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    <ul class="social-icons">
-        <li><a href="https://www.linkedin.com/in/mironmakovei" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-    </ul>
-</nav>
+  </header>
 
+  <main id="top">
+    <section class="hero container">
+      <p class="eyebrow" id="hero-eyebrow">AUTOMATE • INTEGRATE • SCALE</p>
+      <h1 class="title" id="hero-title">Custom n8n Workflows for Busy Teams</h1>
+      <p class="subtitle" id="hero-subtitle">Design, build and maintain automations that save hours every week. Elegant solutions, zero fluff — and a free consultation to get you started.</p>
+      <div class="cta-wrap">
+        <a class="btn primary" id="cta-1" href="mailto:hello@example.com?subject=Free%20n8n%20Consultation">Book free consultation</a>
+        <a class="btn" id="cta-2" href="#contact">Tell me what you need</a>
+      </div>
 
-    <header>
-        <div class="container hero">
-            <div class="hero-text">
-                <h1>I'm Miron Makovei</h1>
-                <p>
-                    Junior Fullstack Web Developer
-                    <br>
-                    📍 Békés, Hungary
-                </p>
-                <a href="#about-me" class="btn">Learn About Me</a>
-            </div>
-            <div class="hero-image">
-                <img src="/src/pfp.jpeg" alt="Miron Makovei">
-            </div>
-        </div>
-    </header>
-
-    <section id="about-me">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>In 2023 I finished a 10-month long bootcamp at <a href="https://www.progmatic.hu" target="_blank" >Progmatic Academy</a>. During this intensive program, I gained a solid foundation in fullstack web development, learning both frontend and backend technologies. Although I am new to the professional world, I am confident in my skills and eager to demonstrate my abilities. I'm excited to contribute to innovative projects.</p>
-        </div>
+      <div class="grid">
+        <article class="card">
+          <h3 id="card1-title">Custom Workflow Design</h3>
+          <p id="card1-text">I design reliable automations tailored to your tools and goals — from simple triggers to multi-step processes.</p>
+        </article>
+        <article class="card">
+          <h3 id="card2-title">Integrations that click</h3>
+          <p id="card2-text">Connect CRMs, spreadsheets, forms, webhooks and APIs. If it talks HTTP, we can make it work together.</p>
+        </article>
+        <article class="card">
+          <h3 id="card3-title">Care & Monitoring</h3>
+          <p id="card3-text">Health checks, error alerts and docs so your workflows remain transparent and easy to maintain.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="skills">
-        <div class="container">
-            <h2>Technologies</h2>
-            <div class="skills-container">
-                <div class="skill-item">
-                    <i class="fab fa-html5 skill-icon"></i>
-                    <h3>HTML5</h3>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-css3-alt skill-icon"></i>
-                    <h3>CSS3</h3>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-js skill-icon"></i>
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-react skill-icon"></i>
-                    <h3>React.js</h3>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-node skill-icon"></i>
-                    <h3>Node.js</h3>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-database skill-icon"></i>
-                    <h3>SQL</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="/src/api.png" />
-                    <h3>REST API</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="/src/icons8-express-js-480.png" />
-                    <h3>Express.js</h3>
-                </div>
-                <div class="skill-item">
-                <img src="/src/icons8-vite-480.png" />
-                    <h3>Vite</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="/src/git.png" />
-                        <h3>Git</h3>
-                    </div>
-            </div>
+    <section class="section container" id="process">
+      <h2 id="process-title">How the Process Works</h2>
+      <div class="steps">
+        <div class="step">
+          <h3 id="step1-title">Discovery & Planning</h3>
+          <p id="step1-text">We discuss your goals, current tools, and identify automation opportunities.</p>
         </div>
+        <div class="step">
+          <h3 id="step2-title">Design & Build</h3>
+          <p id="step2-text">Custom workflows are designed and implemented in n8n, tailored to your needs.</p>
+        </div>
+        <div class="step">
+          <h3 id="step3-title">Testing & Handover</h3>
+          <p id="step3-text">Workflows are tested, documented, and delivered with monitoring setup.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Recent Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="h3">
-                        <h3>Typing Challange</h3>
-                    </div>
-                    <div class="preview-img">
-                        <img src="/src/typingchallange.png" alt="Typing Challange">
-                    </div>
-                        <div class="techstack">
-                            <h4>Tech:</h4>
-                                <p>React.js with Javascript</p>
-                                <p>Vite</p>
-                                <p>CSS</p>
-                        </div>
-                        <div class="button-to-demo">
-                                <button class="button" id="typing-challange">Let's see!</button>
-                        </div>
-                </div>
-                <div class="project-card">
-                    <div class="h3">
-                        <h3>Marvel Memory Game</h3>
-                    </div>
-                    <div class="preview-img">
-                        <img src="/src/marvel-memory-game.png" alt="Marvel Memory Game">
-                    </div>
-                        <div class="techstack">
-                            <h4>Tech:</h4>
-                                <p>React.js with Javascript</p>
-                                <p>Vite</p>
-                                <p>CSS</p>
-                                <p>Marvel API</p>
-                        </div>
-                        <div class="button-to-demo">
-                                <button class="button" id="marvel-memory-game">Let's see!</button>
-                        </div>
-                </div>
-            </div>
-        </div>
+    <section class="section container" id="contact">
+      <h2 id="contact-title">Contact Me</h2>
+      <p class="lead" id="contact-text">Have a workflow idea? Let's discuss how to save hours of work with custom automation.</p>
+      <form class="stack">
+        <input type="text" class="input" placeholder="Your Name" required id="form-name">
+        <input type="email" class="input" placeholder="Your Email" required id="form-email">
+        <textarea class="input" placeholder="Your Message" rows="5" required id="form-message"></textarea>
+        <button type="submit" class="btn primary" id="form-submit">Send Message</button>
+      </form>
     </section>
-    
+  </main>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <form id="contact-form">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <textarea id="message" rows="10" name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-    
-
-    <footer>
-        <p>&copy; 2025 Miron Makovei.</p>
-    </footer>
-
-    <script src="script.js"></script>
-    <script>
-      history.scrollRestoration = "manual";
-
-        $(window).on('beforeunload', function(){
-            $(window).scrollTop(0);
-        });
-     </script>
-    <script>
-        document.getElementById('typing-challange').addEventListener('click', function() {
-            window.open('https://makoveimiron.github.io/typing-challange/', '_blank');
-        });
-
-        document.getElementById('marvel-memory-game').addEventListener('click', function() {
-            window.open('https://makoveimiron.github.io/marvel-game/', '_blank');
-        });
-    </script>
+  <footer class="container">
+    <p>&copy; 2025 <span id="footer-name">Miron Makovei</span>. All rights reserved.</p>
+  </footer>
 </body>
 </html>
