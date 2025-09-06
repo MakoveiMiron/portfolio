@@ -93,14 +93,15 @@ const translations = {
 
     document.getElementById("lang-en").addEventListener("click", () => switchLang("en"));
     document.getElementById("lang-hu").addEventListener("click", () => switchLang("hu"));
-//emailjs.init('ZIDCvq_z1aaxYXD13');
+
+ //emailjs.init({publicKey: "ZIDCvq_z1aaxYXD13"});
 
 document.getElementById('form-submit').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const form = event.target;
 
-    emailjs.sendForm('service_eevklr2', 'template_xpdcguy', form)
+    emailjs.sendForm('service_7shkhou', 'template_xpdcguy', form)
         .then(function(response) {
             console.log('Success:', response);
             alert('Message sent successfully!');
