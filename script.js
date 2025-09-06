@@ -93,7 +93,7 @@ const translations = {
 
  //emailjs.init({publicKey: "ZIDCvq_z1aaxYXD13"});
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
+document.getElementById('form').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const form = event.target;
