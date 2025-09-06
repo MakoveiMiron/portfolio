@@ -9,7 +9,7 @@ function cssVar(name) {
     .getPropertyValue(name)
     .trim();
 }
-
+let currentLang = "en";
 
 const translations = {
       en: {
@@ -37,7 +37,9 @@ const translations = {
         formEmail: "Your Email",
         formMessage: "Your Message",
         formSubmit: "Send Message",
-        footerName: "Miron Makovei"
+        footerName: "Miron Makovei",
+        toastSuccess: "Message sent successfully!",
+        toastError: "Failed to send message. Please try again later."
       },
       hu: {
         title: "Makovei Miron",
@@ -64,12 +66,15 @@ const translations = {
         formEmail: "Az Ön email címe",
         formMessage: "Az Ön üzenete",
         formSubmit: "Üzenet küldése",
-        footerName: "Makovei Miron"
+        footerName: "Makovei Miron",
+        toastSuccess: "Üzenet sikeresen elküldve!",
+        toastError: "Az üzenetet nem sikerült elküldeni. Kérjük, próbálja meg később."
       }
     };
 
     const switchLang = (lang) => {
       const t = translations[lang];
+      currentLang = lang;
       document.documentElement.lang = lang;
       document.getElementById("site-title").textContent = t.title;
       document.getElementById("hero-eyebrow").textContent = t.eyebrow;
@@ -111,45 +116,45 @@ document.getElementById('form').addEventListener('submit', function(event) {
 
     const form = event.target;
 
-    emailjs.sendForm('service_7shkhou', 'template_xpdcguy', form)
-    .then(function(response) {
-        console.log('Success:', response);
-        Toastify({
-            text: "Message sent successfully!",
-            duration: 3000,
-            gravity: "top", 
-            position: "right",
-            style: {
-                background: "var(--card)",  // match card background
-                color: "var(--text)",
-                border: "1px solid var(--border)",
-                borderRadius: "var(--radius)",
-                boxShadow: "var(--shadow)",
-                padding: "12px 16px",
-                fontWeight: "600",
-            },
-            stopOnFocus: true,
-        }).showToast();
-        form.reset();
-    }, function(error) {
-        console.error('Error:', error);
-        Toastify({
-            text: "Failed to send message. Please try again later.",
-            duration: 3000,
-            gravity: "top",
-            position: "right",
-            style: {
-                background: "var(--card)",
-                color: "var(--text)",
-                border: "1px solid var(--border)",
-                borderRadius: "var(--radius)",
-                boxShadow: "var(--shadow)",
-                padding: "12px 16px",
-                fontWeight: "600",
-            },
-            stopOnFocus: true,
-        }).showToast();
-    });
+     emailjs.sendForm('service_7shkhou', 'template_xpdcguy', form)
+  .then(function(response) {
+      console.log('Success:', response);
+      Toastify({
+          text: translations[currentLang].toastSuccess,
+          duration: 3000,
+          gravity: "top",
+          position: "right",
+          style: {
+              background: "var(--card)",
+              color: "var(--text)",
+              border: "1px solid var(--border)",
+              borderRadius: "var(--radius)",
+              boxShadow: "var(--shadow)",
+              padding: "12px 16px",
+              fontWeight: "600",
+          },
+          stopOnFocus: true,
+      }).showToast();
+      form.reset();
+  }, function(error) {
+      console.error('Error:', error);
+      Toastify({
+          text: translations[currentLang].toastError,
+          duration: 3000,
+          gravity: "top",
+          position: "right",
+          style: {
+              background: "var(--card)",
+              color: "var(--text)",
+              border: "1px solid var(--border)",
+              borderRadius: "var(--radius)",
+              boxShadow: "var(--shadow)",
+              padding: "12px 16px",
+              fontWeight: "600",
+          },
+          stopOnFocus: true,
+      }).showToast();
+  });
 
 
 });
