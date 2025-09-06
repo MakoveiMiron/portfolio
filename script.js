@@ -115,8 +115,8 @@ document.getElementById('form').addEventListener('submit', function(event) {
     .then(function(response) {
         console.log('Success:', response);
         Toastify({
-            text: "✅ Message sent successfully!",
-            duration: 4000,
+            text: "Message sent successfully!",
+            duration: 3000,
             gravity: "top", 
             position: "right",
             style: {
@@ -134,8 +134,8 @@ document.getElementById('form').addEventListener('submit', function(event) {
     }, function(error) {
         console.error('Error:', error);
         Toastify({
-            text: "❌ Failed to send message. Please try again later.",
-            duration: 4000,
+            text: "Failed to send message. Please try again later.",
+            duration: 3000,
             gravity: "top",
             position: "right",
             style: {
