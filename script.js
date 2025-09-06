@@ -59,7 +59,7 @@ const translations = {
         step2Title: "Tervezés és építés",
         step2Text: "Elkészítem a DEMO munkafolyamatot az Ön igényeire szabva.",
         step3Title: "Tesztelés és átadás",
-        step3Text: "A munkafolyamatokat tesztelem, bemutatom és átadom felügyeleti beállításokkal.",
+        step3Text: "A munkafolyamatot bemutataom majd beépítem az Ön rendszerébe",
         contactTitle: "Kapcsolatfelvétel",
         contactText: "Van egy munkafolyamat-ötlete? Beszéljük meg, hogyan spórolhat meg munkaórákat egyedi automatizálással.",
         formName: "Az Ön neve",
