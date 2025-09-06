@@ -4,8 +4,7 @@ const translations = {
         eyebrow: "AUTOMATE • INTEGRATE • SCALE",
         heroTitle: "Custom n8n Workflows for Busy Teams",
         heroSubtitle: "Design, build and maintain automations that save hours every week. Elegant solutions, zero fluff — and a free consultation to get you started.",
-        cta1: "Book free consultation",
-        cta2: "Tell me what you need",
+        cta1: "Tell me what you need",
         card1Title: "Custom Workflow Design",
         card1Text: "I design reliable automations tailored to your tools and goals — from simple triggers to multi-step processes.",
         card2Title: "Integrations that click",
@@ -32,8 +31,7 @@ const translations = {
         eyebrow: "AUTOMATIZÁLJ • INTEGRÁLJ • NÖVEKEDJ",
         heroTitle: "Egyedi n8n munkafolyamatok elfoglalt csapatoknak",
         heroSubtitle: "Tervezek, építek és karbantartok automatizmusokat, amelyek heti órákat spórolnak meg. Elegáns megoldások, sallang nélkül — és egy ingyenes konzultáció, hogy elinduljunk.",
-        cta1: "Foglaljon ingyenes konzultációt",
-        cta2: "Mondja el, mire van szüksége",
+        cta1: "Mondja el, mire van szüksége",
         card1Title: "Egyedi munkafolyamat-tervezés",
         card1Text: "Megbízható automatizmusokat tervezek az Ön eszközeihez és céljaihoz igazítva — egyszerű triggertől a többlépéses folyamatig.",
         card2Title: "Integrációk, amelyek működnek",
@@ -65,7 +63,6 @@ const translations = {
       document.getElementById("hero-title").textContent = t.heroTitle;
       document.getElementById("hero-subtitle").textContent = t.heroSubtitle;
       document.getElementById("cta-1").textContent = t.cta1;
-      document.getElementById("cta-2").textContent = t.cta2;
       document.getElementById("card1-title").textContent = t.card1Title;
       document.getElementById("card1-text").textContent = t.card1Text;
       document.getElementById("card2-title").textContent = t.card2Title;
