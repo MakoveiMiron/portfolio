@@ -99,14 +99,29 @@ document.getElementById('form').addEventListener('submit', function(event) {
     const form = event.target;
 
     emailjs.sendForm('service_7shkhou', 'template_xpdcguy', form)
-        .then(function(response) {
-            console.log('Success:', response);
-            alert('Message sent successfully!');
-            form.reset(); 
-        }, function(error) {
-            console.error('Error:', error);
-            alert('Failed to send message. Please try again later.');
-        });
+    .then(function(response) {
+        console.log('Success:', response);
+        Toastify({
+            text: "✅ Message sent successfully!",
+            duration: 4000,
+            gravity: "top", // top or bottom
+            position: "right", // left, center or right
+            backgroundColor: "#22c55e",
+            stopOnFocus: true,
+        }).showToast();
+        form.reset();
+    }, function(error) {
+        console.error('Error:', error);
+        Toastify({
+            text: "❌ Failed to send message. Please try again later.",
+            duration: 4000,
+            gravity: "top",
+            position: "right",
+            backgroundColor: "#ef4444",
+            stopOnFocus: true,
+        }).showToast();
+    });
+
 });
 
 
