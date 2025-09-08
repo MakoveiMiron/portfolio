@@ -127,7 +127,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
           style: {
               background: "var(--card)",
               color: "var(--text)",
-              border: "1px solid var(--border)",
+              border: "1px solid lightgreen",
               borderRadius: "var(--radius)",
               boxShadow: "var(--shadow)",
               padding: "12px 16px",
@@ -146,7 +146,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
           style: {
               background: "var(--card)",
               color: "var(--text)",
-              border: "1px solid var(--border)",
+              border: "1px solid lightcoral",
               borderRadius: "var(--radius)",
               boxShadow: "var(--shadow)",
               padding: "12px 16px",
