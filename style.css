@@ -22,16 +22,22 @@
                   var(--bg);
       background-attachment: fixed;
       background-size: cover;
+      padding: 70px
     }
 
     .container { width: min(1100px, 92%); margin: 0 auto; }
 
     header {
-      position: sticky; top: 0; z-index: 50;
-      backdrop-filter: blur(8px);
-      background: linear-gradient(to bottom, rgba(11,15,26,.85), rgba(11,15,26,.55));
-      border-bottom: 1px solid var(--border);
-    }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+  background: linear-gradient(to bottom, rgba(11,15,26,.85), rgba(11,15,26,.55));
+  border-bottom: 1px solid var(--border);
+}
+
 
     .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
     .logo { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); }
