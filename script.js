@@ -103,6 +103,7 @@ const translations = {
       document.getElementById("form-message").placeholder = t.formMessage;
       document.getElementById("form-submit").textContent = t.formSubmit;
       document.getElementById("footer-name").textContent = t.footerName;
+      document.getElementById("copy-right").textContent = t.copyRight;
 
       document.getElementById("lang-en").setAttribute("aria-pressed", lang === "en");
       document.getElementById("lang-hu").setAttribute("aria-pressed", lang === "hu");
