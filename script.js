@@ -39,7 +39,8 @@ const translations = {
         formSubmit: "Send Message",
         footerName: "Miron Makovei",
         toastSuccess: "Message sent successfully!",
-        toastError: "Failed to send message. Please try again later."
+        toastError: "Failed to send message. Please try again later.",
+        copyRight: "All rights reserved."
       },
       hu: {
         title: "Makovei Miron",
@@ -68,7 +69,8 @@ const translations = {
         formSubmit: "Üzenet küldése",
         footerName: "Makovei Miron",
         toastSuccess: "Üzenet sikeresen elküldve!",
-        toastError: "Az üzenetet nem sikerült elküldeni. Kérjük, próbálja meg később."
+        toastError: "Az üzenetet nem sikerült elküldeni. Kérjük, próbálja meg később.",
+        copyRight: "Minden jog fenntartva."
       }
     };
 
